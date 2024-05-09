@@ -1,80 +1,4 @@
-.link {
-  padding: 8px 24px;
-  font-size: 24px;
-  display: inline-block;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  position: relative;
-}
 
-.link::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  -webkit-transform: translate(20%, -50%);
-  transform: translate(20%, -50%);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  background-color: #f5f7f7;
-}
-
-.link:hover {
-  opacity: 0.8;
-}
-
-.link:hover::after {
-  width: 70%;
-}
-
-.menu-logo img {
-  max-width: 4rem;
-}
-
-@media screen and (max-width: 960px) {
-  h1 {
-    font-size: 64px;
-  }
-  h2 {
-    font-size: 48px;
-  }
-}
-
-.mask {
-  background: linear-gradient(225deg, #2dc7ed 0%, #538bf0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.menu {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 48px 16px;
-}
-
-.mask {
-  background: linear-gradient(225deg, #2dc7ed 0%, #538bf0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.hero {
-  height: 90vh;
-}
-
-@media screen and (max-width: 960px) {
-  .hero {
-    height: auto;
-  }
-}
 
 .bg-hero {
   position: absolute;
@@ -82,7 +6,6 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  border: 0px solid green;
   overflow: hidden;
   z-index: -1;
   display: -webkit-box;
@@ -95,11 +18,9 @@
   -ms-flex-align: center;
   align-items: center;
   object-fit: cover;
-
-  background-color: hsl(222, 77%, 5%);  /*Nasser */
-  background-color: hsl(223, 81%, 4%);  /* Luan  */
-
 }
+
+
 .svg-hero {
   object-fit: cover;
 }
@@ -127,7 +48,17 @@
   -webkit-animation: linha1 4s linear infinite alternate;
   animation: linha1 4s linear infinite alternate;
 }
+.bg-hero .svg-bg-hero {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
 
+@media screen and (max-width: 960px) {
+  .bg-hero .svg-bg-hero {
+    transform: rotate(60deg) scaleX(3.5) scaleY(2);
+  }
+}
 @-webkit-keyframes linha1 {
   0% {
     stroke-dasharray: 0 100;

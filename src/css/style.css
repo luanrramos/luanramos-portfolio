@@ -1,20 +1,23 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"); */
+/* Global */
+@import url("global/bg-hero.css");
+@import url("global/footer.css");
+
+/* Componentes */
 @import url("components/tailwind.css");
-@import url("style-bg.css");
-@import url("sobre.css");
-@import url("footer.css");
-@import url("projects.css");
 @import url("components/colors.css");
 @import url("components/typography.css");
 @import url("components/components.css");
-@import url("sidebar.css");
 @import url("components/burger-menu.css");
-@import url("home.css");
-@import url("summary.css");
-@import url("components/aos.css");
 @import url("components/social-links.css");
-@import url("global/background.css");
+@import url("components/aos.css");
+
+/* Homepage */
+@import url("homepage/sobre.css");
+@import url("homepage/projects.css");
+@import url("homepage/sidebar.css");
+@import url("homepage/home.css");
+@import url("homepage/summary.css");
+@import url("homepage/tecnologias.css");
 
 *,
 *::after,
@@ -23,17 +26,8 @@
   margin: 0;
   box-sizing: border-box;
 }
-* {
-  cursor: default;
-}
-a,
-.list h2,
-.lab,
-.button-hover span {
-  cursor: pointer;
-}
 ::-webkit-scrollbar-track {
-  background-color: #1111114d;
+  background-color: var(--color-bg);
 }
 ::-webkit-scrollbar {
   width: 6px;
@@ -91,16 +85,35 @@ p {
   margin-left: 20px;
   width: auto;
 }
-p,
-#sidebar {
-  font-family: "Bai Jamjuree";
-}
+
 @media screen and (max-width: 768px) {
   .container {
     padding: 0 2.4rem;
   }
 }
+@media (max-width: 350px) {
+  .show * {
+    font-size: 1rem;
+  }
 
+  .summary .container * {
+    font-size: 1rem;
+  }
+  h5,
+  h6,
+  p,
+  .heading-3,
+  .heading-1,
+  .paragraph {
+    font-size: 1.9rem;
+  }
+  .summary .paragraph {
+    font-size: 1.9rem;
+  }
+  .grid-7 {
+    font-size: 1rem;
+  }
+}
 .container .btn {
   padding: 1.4rem 2.4rem;
   background-color: var(--color-brand);

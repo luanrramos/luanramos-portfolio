@@ -1,0 +1,9 @@
+.techs h2 {
+  text-transform: none;
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 300;
+}
+.techs h6 {
+  font-weight: 300;
+}

@@ -13,7 +13,7 @@
   padding: 2.4rem;
   z-index: 4;
   transition: all 0.4s ease;
-  background-color: rgba(1, 2, 9, 0.05);
+  background-color: rgba(1, 2, 9, 0.035);
 }
 
 #sidebar .person {

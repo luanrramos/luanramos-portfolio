@@ -1,5 +1,5 @@
 :root {
-  --font-base: "Bai Jamjuree";
+  --font-base2: "Bai Jamjuree";
   --font-base: "Oxanium";
   --border-radius: 1.2rem;
   --border-radius-lg: 2.4rem;
@@ -68,8 +68,9 @@
   --color-body: hsl(252, 27%, 82%);
   --color-heading: #edeff0;
 
-  --color-bg: hsl(222, 77%, 5%);
-  --color-bg: hsl(223, 81%, 4%);
+  --color-bg: #030917; /* Nasser */
+  --color-bg: #020712; /* Luan */
+
 }
 
 .color-gray {
@@ -89,3 +90,4 @@
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
+

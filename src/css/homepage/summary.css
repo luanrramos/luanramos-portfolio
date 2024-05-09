@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.summary h3 {
+.summary h2 {
   text-transform: none;
   font-size: 48px;
   line-height: 120%;

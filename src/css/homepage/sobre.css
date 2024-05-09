@@ -1,0 +1,16 @@
+#sobre p {
+  line-height: 1.8;
+}
+.about h2 {
+  text-transform: none;
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 300;
+}
+
+.about h5 {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+

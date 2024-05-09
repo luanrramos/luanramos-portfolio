@@ -1,17 +1,22 @@
 .lista-item {
   max-width: 1600px;
-  /* margin: 0 auto; */
   padding: 16px 24px;
   position: relative;
-  /* display: -webkit-box; */
-  /* display: -ms-flexbox; */
-  /* -webkit-box-pack: start; */
-  /* -ms-flex-pack: start; */
-  /* justify-content: flex-start; */
-  /* -webkit-box-align: center; */
-  /* -ms-flex-align: center; */
 }
+.projects-title h2 {
+  text-transform: none;
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 300;
+}
+.projects h3 {
+  text-transform: none;
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 200;
+  text-transform: uppercase;
 
+}
 .img-project {
   max-width: 650px;
   border-radius: 4px;
@@ -33,12 +38,14 @@
   top: 50%;
   left: 61%;
 }
-.lista-item h2 {
-  font-weight: 200;
-}
+
 .lista-item span {
   font-weight: 100;
 }
+.list h5 {
+  font-family: var(--font-base2);
+}
+
 @media (max-width: 800px) {
   .lista-item span {
     display: none;
