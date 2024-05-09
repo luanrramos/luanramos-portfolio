@@ -1,0 +1,57 @@
+/* Sidebar */
+#sidebar {
+  min-height: 100vh;
+  height: 100%;
+  width: 24rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  text-align: center;
+  padding: 2.4rem;
+  z-index: 4;
+  transition: all 0.4s ease;
+  background-color: rgba(1, 2, 9, 0.05);
+}
+
+#sidebar .person {
+  margin-bottom: 2.4rem;
+  justify-self: center;
+  align-self: center;
+}
+
+#sidebar .person img {
+  border-radius: var(--border-radius-lg);
+  width: 17rem;
+  margin-bottom: 1.2rem;
+}
+
+#sidebar ul {
+  display: grid;
+  gap: 1.2rem;
+}
+
+#sidebar ul li a {
+  color: var(--color-heading);
+}
+
+#sidebar ul li a.is-active,
+#sidebar ul li a:hover {
+  background: linear-gradient(224.78deg, #4271eb 8.12%, #6bbaff 92.21%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+@media screen and (max-width: 992px) {
+  #sidebar {
+    left: -24rem;
+  }
+
+  #sidebar.is-active {
+    left: 0;
+    background-color: var(--color-bg);
+  }
+}

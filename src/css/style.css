@@ -1,0 +1,216 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"); */
+@import url("components/tailwind.css");
+@import url("style-bg.css");
+@import url("sobre.css");
+@import url("footer.css");
+@import url("projects.css");
+@import url("components/colors.css");
+@import url("components/typography.css");
+@import url("components/components.css");
+@import url("sidebar.css");
+@import url("components/burger-menu.css");
+@import url("home.css");
+@import url("summary.css");
+@import url("components/aos.css");
+@import url("components/social-links.css");
+@import url("global/background.css");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* {
+  cursor: default;
+}
+a,
+.list h2,
+.lab,
+.button-hover span {
+  cursor: pointer;
+}
+::-webkit-scrollbar-track {
+  background-color: #1111114d;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: var(--cor-6);
+}
+::-webkit-scrollbar-thumb {
+  background: #dad7d7e8;
+  border-radius: 1000em;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+h5,
+h6 {
+  letter-spacing: 2px;
+}
+body {
+  font-size: 1.6rem;
+  background-color: var(--color-bg);
+  color: var(--color-body);
+  line-height: 1.5;
+  font-family: var(--font-base), sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-brand);
+  transition: all 0.4s ease;
+  font-size: 500;
+}
+
+a:hover {
+  color: var(--color-brand2);
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: inline-block;
+}
+p {
+  letter-spacing: 0px;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 200;
+}
+.container {
+  padding: 0 4.4rem;
+  margin-left: 20px;
+  width: auto;
+}
+p,
+#sidebar {
+  font-family: "Bai Jamjuree";
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 2.4rem;
+  }
+}
+
+.container .btn {
+  padding: 1.4rem 2.4rem;
+  background-color: var(--color-brand);
+  color: var(--color-bg2);
+  background: linear-gradient(224.78deg, #4271eb 8.12%, #6bbaff 92.21%);
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: var(--border-radius);
+  border: transparent;
+  font-size: 1.6rem;
+  font-family: var(--font-base);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--color-brand2);
+  color: var(--color-bg2);
+}
+
+/* Main */
+#content-wrapper {
+  padding-left: 24rem;
+}
+
+@media screen and (max-width: 992px) {
+  .burger {
+    display: grid;
+  }
+
+  #content-wrapper {
+    padding-left: 0;
+  }
+}
+
+.logo-w {
+  fill: transparent;
+  -webkit-animation: logo 8s ease infinite alternate;
+  animation: logo 8s ease infinite alternate;
+}
+
+.logo-w-stroke {
+  -webkit-animation: logo 8s ease infinite alternate;
+  animation: logo 8s ease infinite alternate;
+}
+
+#logo-p {
+  fill: color-mix(in srgb, #4271eb 38.12%, #6bbaff 62.21%);
+  -webkit-animation: logo 8s ease infinite alternate;
+  animation: logo 8s ease infinite alternate;
+}
+
+@-webkit-keyframes logo {
+  0% {
+    stroke-width: 0;
+    stroke-dasharray: 1 100;
+  }
+  25% {
+    stroke-width: 1;
+    fill: transparent;
+    stroke-dasharray: 100 0;
+  }
+  60%,
+  100% {
+    stroke-width: 2;
+    fill: color-mix(in srgb, #4271eb 38.12%, #6bbaff 62.21%);
+  }
+}
+
+@keyframes logo {
+  0% {
+    stroke-width: 0;
+    stroke-dasharray: 1 100;
+    fill: transparent;
+  }
+  25% {
+    stroke-width: 1;
+    fill: transparent;
+    stroke-dasharray: 100 0;
+  }
+  60%,
+  100% {
+    stroke-width: 2;
+    fill: color-mix(in srgb-linear, #4271eb 38.12, #6bbaff 62.21%);
+  }
+}
+@-webkit-keyframes loop {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes loop {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  overflow: hidden;
+}
+.loader svg {
+  max-width: 15rem;
+  overflow: hidden;
+}

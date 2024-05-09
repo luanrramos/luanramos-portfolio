@@ -1,0 +1,39 @@
+.burger {
+  width: 6.4rem;
+  height: 6.4rem;
+  /* background-color: var(--color-brand); */
+  border-radius: 10rem;
+  position: fixed;
+  right: 2.4rem;
+  top: 2.4rem;
+  cursor: pointer;
+  display: grid;
+  align-content: center;
+  display: none;
+}
+
+.burger span {
+  width: 4rem;
+  height: 2px;
+  display: block;
+  background-color: var(--color-brand);
+  margin: 1.2rem auto;
+  transition: all 0.4s ease;
+}
+.burger span:nth-child(2) {
+  width: 3.3rem;
+}
+.burger.is-active span:nth-child(1) {
+  transform: translateY(0.8rem) rotate(-45deg);
+}
+
+.burger.is-active span:nth-child(2) {
+  transform: translateY(-0.8rem) rotate(45deg);
+  width: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+  .burger {
+    display: grid;
+  }
+}

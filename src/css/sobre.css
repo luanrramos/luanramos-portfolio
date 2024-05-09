@@ -1,0 +1,10 @@
+
+#sobre p {
+  line-height: 1.8;
+}
+
+@media (max-width: 640px) {
+  #sobre p {
+    line-height: 1.2;
+  }
+}

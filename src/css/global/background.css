@@ -1,0 +1,11 @@
+.bg-hero .svg-bg-hero {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+@media screen and (max-width: 960px) {
+  .bg-hero .svg-bg-hero {
+    transform: rotate(60deg) scaleX(3.5) scaleY(2);
+  }
+}

@@ -1,0 +1,8 @@
+#stripe {
+  width: 100%;
+  border-bottom: 1px solid #15171a;
+  z-index: -2;
+}
+.lowercase {
+  text-transform: none;
+}

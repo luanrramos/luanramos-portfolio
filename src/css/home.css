@@ -1,0 +1,55 @@
+section.full-height {
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  padding: 8rem 0;
+}
+section.md-height {
+  min-height: 55vh;
+  display: grid;
+  align-content: center;
+  padding: 8rem 0;
+}
+section.full-height-home {
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  padding: 8rem 0;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Home */
+.sobre-intro {
+  margin-bottom: 3.2rem;
+  position: relative;
+}
+
+.card {
+  transition: all 0.4s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem);
+}
+
+/* Home */
+#home .cta {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  margin: 6rem 9%;
+}
+
+#home p {
+  max-width: 60rem;
+  /* margin-top: 1.8rem; */
+  /* margin-bottom: 1rem; */
+}
+
+@media (max-width: 1200px) {
+  section.full-height-home {
+    gap: 4rem;
+    grid-template-columns: 1fr;
+  }
+}

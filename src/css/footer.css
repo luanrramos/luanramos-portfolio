@@ -1,0 +1,62 @@
+.footer {
+  padding: 4rem 0;
+  align-items: center;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-redes {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.button-hover {
+  padding: 24px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid linear-gradient(224.78deg, #4271eb 8.12%, #6bbaff 92.21%);
+  border-radius: 100em;
+}
+.button-hover:hover {
+  color: white;
+}
+.button-hover span {
+  position: relative;
+  z-index: 2;
+}
+
+.button-hover::before {
+  content: "";
+  background: linear-gradient(224.78deg, #4271eb 8.12%, #6bbaff 92.21%);
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: var(--eixoY);
+  left: var(--eixoX);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 1s, height 1s;
+}
+
+.button-hover:hover::before {
+  width: 1000px;
+  height: 1000px;
+  background: linear-gradient(224.78deg, #4271eb 8.12%, #6bbaff 92.21%);
+}
+
+@media (max-width: 600px) {
+  .footer {
+    justify-content: center;
+  }
+  .footer-redes {
+    grid-template-columns: auto;
+  }
+}

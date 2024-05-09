@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITLE -->
+    <title>Luan Ramos • Desenvolvedor</title>
+    <link rel="shortcut icon" href="src/img/icons/logo-lr.png" type="image/png">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/tailwind.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Side nav -->
+    <header class="top" data-aos="fade-right" data-aos-delay="5000">
+        <nav class="navbar" id="sidebar">
+            <div class="person">
+                <img src="./src/img/me/sorrindo.jpg" alt="">
+            </div>
+            <ul style="text-transform: uppercase;" class="nav-container">
+                <li><a href="#home" class="is-active">Início</a></li>
+                <li><a href="#trabalhos">Projetos</a></li>
+                <li><a href="#services">Tecnologias</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+
+            <div class="social-links self-center">
+                <a href="linkedin.com/in/luanrramos"><i class="lab la-linkedin"></i></a>
+                <a href="github.com/luanrramos"><i class="lab la-github"></i></a>
+                <a href="#"><i class="lab la-whatsapp"></i></a>
+                <a class="grid place-center" href="#"><img class="lab self-center" style="cursor: pointer; width: 24px; height: 24px; " src="src/img/icons/cv-icon.svg" alt=""></a>
+            </div>
+
+            <div class="burger">
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- // Side nav end -->
+
+    <div class="loader" style="width: 0%;">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="248" height="157" viewBox="0 0 248 157" fill="none">
+            <g id="logo" clip-path="url(#clip0_377_64)">
+                <path id="logo-p" d="M127 3.34084e-05C137.223 -0.0930464 147.447 -0.163923 157.67 -0.207215C162.419 -0.228004 167.167 -0.256159 171.915 -0.301724C176.506 -0.345497 181.096 -0.369169 185.687 -0.379476C187.43 -0.386811 189.173 -0.401134 190.916 -0.422887C205.127 -0.593054 216.395 1.09928 228 10C228.592 10.4164 229.183 10.8328 229.793 11.2618C239.317 18.5191 246.158 30.2817 248 42C249.651 59.1501 247.375 72.6183 236.332 86.3711C231.231 92.122 225.882 96.5592 219 100C218.34 100 217.68 100 217 100C231.75 127.452 231.75 127.452 248 154C248 154.99 248 155.98 248 157C237.77 157 227.54 157 217 157C215.639 154.525 214.278 152.05 212.875 149.5C207.642 140.045 202.197 130.72 196.738 121.395C192.803 114.672 188.897 107.933 185 101.188C184.389 100.133 183.779 99.0786 183.15 97.9922C179.333 91.3808 175.623 84.7194 172 78C172.771 77.9854 173.542 77.9709 174.336 77.9558C177.87 77.8808 181.404 77.7843 184.938 77.6875C186.15 77.665 187.362 77.6424 188.611 77.6192C198.822 77.3148 206.736 76.178 214.27 68.9297C219.939 62.6073 220.663 56.7693 220.375 48.3399C219.5 40.5497 215.933 36.4337 210.098 31.4453C205.766 28.4609 202.27 27.7631 197.055 28.062C195.879 28.1196 194.704 28.1772 193.492 28.2366C192.228 28.3003 190.963 28.3641 189.66 28.4297C186.258 28.527 182.857 28.6115 179.454 28.6881C175.912 28.7751 172.381 28.9043 168.844 29.128C149.999 30.2782 149.999 30.2782 142 27C134.136 20.0039 130.262 9.78474 127 3.34084e-05ZM137 5.00003C138.427 8.79053 140.162 12.2713 142.125 15.8125C142.664 16.7884 143.203 17.7642 143.758 18.7696C144.168 19.5056 144.578 20.2417 145 21C146.06 21.0055 146.06 21.0055 147.141 21.0111C153.835 21.0491 160.528 21.1061 167.22 21.1839C170.661 21.2233 174.1 21.2555 177.541 21.271C181.505 21.2892 185.469 21.3392 189.434 21.3907C190.656 21.3919 191.878 21.3931 193.137 21.3944C200.334 21.5167 205.714 22.4495 212 26C213.052 26.5569 214.104 27.1138 215.188 27.6875C221.544 32.9141 225.5 40.0949 226.336 48.2969C226.451 58.4998 224.942 66.8604 217.746 74.4688C207.54 83.4187 194.921 83.3083 182 83C185.864 90.9466 189.998 98.6483 194.5 106.25C195.728 108.338 196.956 110.427 198.184 112.516C198.81 113.578 199.436 114.641 200.082 115.736C202.013 119.022 203.932 122.314 205.848 125.609C206.782 127.216 206.782 127.216 207.734 128.855C208.921 130.897 210.107 132.939 211.293 134.981C212.363 136.82 213.444 138.653 214.535 140.479C215.479 142.103 216.373 143.758 217.201 145.443C218.32 147.596 219.278 149.291 221 151C224.004 151.936 226.705 151.771 229.812 151.5C230.601 151.464 231.389 151.428 232.201 151.391C234.136 151.297 236.069 151.153 238 151C236.6 146.18 234.473 142.13 231.875 137.875C226.953 129.666 222.181 121.376 217.438 113.063C216.715 111.799 215.993 110.535 215.271 109.271C210.147 100.293 210.147 100.293 209 98C209.75 97.6713 210.5 97.3426 211.273 97.0039C225.648 90.3237 235.269 80.5448 241.031 65.8242C245.088 53.9972 243.112 42.0905 238 31C231.871 18.9833 222.496 11.6596 210 7.00003C201.808 4.71885 193.686 4.73766 185.242 4.80472C183.844 4.80846 182.446 4.8113 181.048 4.8133C177.401 4.82086 173.755 4.84045 170.109 4.8627C166.375 4.88331 162.641 4.89233 158.906 4.90238C151.604 4.9237 144.302 4.95776 137 5.00003Z" fill="#4577EC" stroke="#4577EC" />
+
+                <path id="logo-p" d="M22 0C30.91 0 39.82 0 49 0C49.1583 12.2483 49.2867 24.4958 49.3627 36.7449C49.3992 42.433 49.4486 48.1204 49.5281 53.8081C49.6043 59.3 49.646 64.7913 49.6641 70.2837C49.677 72.3761 49.7023 74.4685 49.7401 76.5605C49.7911 79.4982 49.7979 82.433 49.7947 85.3711C49.8198 86.2307 49.845 87.0902 49.8709 87.9758C49.7987 94.0554 47.9765 97.0225 43.7392 101.338C43.1653 101.887 42.5913 102.435 42 103C41.203 103.845 40.4059 104.69 39.5847 105.561C37.2908 107.879 34.9927 110.193 32.6875 112.5C31.4722 113.734 31.4722 113.734 30.2324 114.992C29.0713 116.156 29.0713 116.156 27.8867 117.344C26.8381 118.399 26.8381 118.399 25.7683 119.475C24 121 24 121 22 121C22 81.07 22 41.14 22 0ZM28 5C28 38.66 28 72.32 28 107C30.31 105.02 32.62 103.04 35 101C36.191 100.192 36.191 100.192 37.4061 99.3683C40.4534 97.076 42.5761 94.8999 43.4294 91.0758C44.1414 85.0593 43.9164 79.013 43.7812 72.9688C43.7663 71.0072 43.7549 69.0457 43.7469 67.0841C43.7165 61.941 43.638 56.7997 43.5493 51.6572C43.4672 46.4019 43.4309 41.1464 43.3906 35.8906C43.305 25.5929 43.1686 15.2966 43 5C38.05 5 33.1 5 28 5Z" fill="#4577EC" />
+                <path id="logo-p" d="M54.9114 129.432C55.6924 129.432 56.4734 129.431 57.2781 129.43C59.8489 129.434 62.4178 129.472 64.9883 129.512C66.7747 129.521 68.5612 129.528 70.3477 129.533C75.0416 129.552 79.7347 129.601 84.4283 129.657C89.221 129.708 94.0138 129.731 98.8066 129.756C108.205 129.809 117.602 129.897 127 130C127 138.91 127 147.82 127 157C92.35 157 57.7 157 22 157C28.664 149.225 28.664 149.225 31.4375 146.563C34.5434 143.511 37.4064 140.308 40.2266 136.992C40.8118 136.335 41.397 135.677 42 135C42.6984 134.146 43.3968 133.291 44.1164 132.411C47.732 129.388 50.4078 129.321 54.9114 129.432ZM37.7837 146.871C35.9175 149.544 35.9175 149.544 36 151C64.05 151 92.1 151 121 151C121 146.05 121 141.1 121 136C111.985 135.682 102.973 135.426 93.9536 135.275C89.7638 135.202 85.5781 135.104 81.3906 134.944C56.6664 133.106 56.6664 133.106 37.7837 146.871Z" fill="#4577EC" />
+            </g>
+            <defs>
+                <clipPath id="clip0_377_64">
+                    <rect width="248" height="157" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+    </div>
+    <!-- Main wrapper -->
+
+    <main class="delay-bg" id="content-wrapper">
+        <!-- BACKGROUND HERO -->
+        <div style=" opacity: 1;">
+            <div class="bg-hero" style="opacity: 1;">
+                <svg class="svg-bg-hero" id="absolute" viewBox="0 0 2560 1440" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g " id=" bg-hero" clip-path="url(#clip0)">
+                        <g id="Vector 1115" filter="url(#filter0_f)">
+                            <path d="M2057.98 976.855C1146.98 951.753 866.415 503.508 549.588 516.267C151.315 532.306 225.523 952.751 549.588 1112.95C931.572 1301.78 2675.34 993.867 2057.98 976.855Z" fill="url(#paint0_linear)" fill-opacity="0.3" />
+                        </g>
+                        <g id="Vector 1114" filter="url(#filter1_f)">
+                            <path d="M1476.29 573.407C1751.06 662.18 2052.39 873.257 2155.63 865.308C2340.45 851.076 2216.87 362.765 1991.12 224.015C1779.29 93.8176 501.679 169.375 872.949 444.168C1070.47 590.363 1242.46 497.856 1476.29 573.407Z" fill="url(#paint1_linear)" fill-opacity="0.2" />
+                        </g>
+                        <path id="bg-heroline3" d="M1271.41 691.294L1271.13 691.71L1271.41 691.294ZM-197.828 429.949C141.424 349.792 383.448 331.724 603.248 375.432C823.05 419.14 1020.68 524.635 1271.13 691.71L1271.68 690.879C1021.2 523.784 823.442 418.199 603.443 374.451C383.442 330.703 141.257 348.804 -198.058 428.976L-197.828 429.949ZM1271.13 691.71C1692.74 972.966 2151.67 1044.85 2664.28 939.971L2664.08 938.991C2151.69 1043.83 1693.05 971.969 1271.68 690.879L1271.13 691.71Z" stroke="url(#paint2_linear)" />
+                        <path id="bg-heroline2" d="M1280.46 674.69L1280.38 675.183L1280.38 675.183L1280.46 674.69ZM-167.013 1037.71C109.696 825.695 323.115 710.133 541.546 660.032C759.979 609.929 983.476 625.276 1280.38 675.183L1280.54 674.197C983.607 624.284 759.952 608.91 541.322 659.057C322.691 709.204 109.139 824.862 -167.622 1036.91L-167.013 1037.71ZM1280.38 675.183C1780.18 759.197 2228.31 636.915 2653.07 331.374L2652.49 330.562C2227.92 635.966 1780.05 758.161 1280.54 674.197L1280.38 675.183Z" stroke="url(#paint3_linear)" />
+                        <path id="bg-heroline1" d="M1302.55 760.741L1302.57 761.241L1302.57 761.241L1302.55 760.741ZM-45.1696 1401.53C184.403 1139.2 370.905 983.901 575.204 891.791C779.504 799.68 1001.65 770.741 1302.57 761.241L1302.53 760.241C1001.58 769.743 779.277 798.685 574.793 890.879C370.307 983.074 183.693 1138.5 -45.9221 1400.87L-45.1696 1401.53ZM1302.57 761.241C1809.13 745.248 2224.43 537.162 2580.75 154.002L2580.02 153.321C2223.86 536.31 1808.8 744.258 1302.53 760.241L1302.57 761.241Z" stroke="url(#paint4_linear)" />
+                        <rect id="square3" x="531.061" y="910" width="16" height="16" rx="2" transform="rotate(22.2604 531.061 910)" fill="url(#paint5_linear)" />
+                        <rect id="square3_2" x="2143.06" y="590" width="32" height="32" rx="2" transform="rotate(22.2604 2143.06 590)" fill="url(#paint6_linear)" />
+                        <rect id="square3_3" x="471.061" y="346" width="32" height="32" rx="2" transform="rotate(22.2604 471.061 346)" fill="url(#paint7_linear)" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_f" x="-71.9999" y="166" width="2611" height="1358" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feGaussianBlur stdDeviation="175" result="effect1_foregroundBlur" />
+                        </filter>
+                        <filter id="filter1_f" x="487" y="-300" width="2090.73" height="1702.83" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur" />
+                        </filter>
+                        <linearGradient id="paint0_linear" x1="2189" y1="516" x2="1783.9" y2="1692.51" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2DC7ED" />
+                            <stop offset="1" stop-color="#538BF0" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear" x1="952.771" y1="1102.83" x2="1478.86" y2="-246.785" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2DC7ED" />
+                            <stop offset="1" stop-color="#538BF0" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear" x1="2667.88" y1="918.717" x2="-194.243" y2="408.698" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2DC7ED" />
+                            <stop offset="1" stop-color="#538BF0" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint3_linear" x1="2647.66" y1="310.509" x2="-172.442" y2="1016.85" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2DC7ED" />
+                            <stop offset="1" stop-color="#538BF0" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint4_linear" x1="2571.34" y1="134.612" x2="-54.5966" y2="1382.15" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2DC7ED" />
+                            <stop offset="1" stop-color="#538BF0" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint5_linear" x1="547.061" y1="910" x2="531.061" y2="926" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2DC7ED" />
+                            <stop offset="1" stop-color="#538BF0" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint6_linear" x1="2159.06" y1="590" x2="2143.06" y2="606" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2DC7ED" />
+                            <stop offset="1" stop-color="#538BF0" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="paint7_linear" x1="487.061" y1="346" x2="471.061" y2="362" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2DC7ED" />
+                            <stop offset="1" stop-color="#538BF0" stop-opacity="0" />
+                        </linearGradient>
+                        <clipPath id="clip0">
+                            <rect width="2560" height="1440" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </div>
+        </div>
+
+        <!-- HOME -->
+        <div class="show">
+            <section id="home" class="home full-height-home container-hero">
+                <div class="grid-7 container">
+                    <div>
+                        <h6 data-aos="fade-up" data-aos-delay="600" style="font-size: 18px; letter-spacing: 2px" class="info-title color-title">OLÁ, ME CHAMO</h6>
+                        <h1 style="text-transform: none;" class="titulo-home heading-1 title ml-4 mb-8" data-aos="fade-up" data-aos-delay="1200">Luan Ramos</h1>
+                    </div>
+                    <div class="container">
+                        <h4 id="text-creative" data-aos="fade-up" data-aos-delay="200" class="xp-home dc mt-8 color-title lowercase">Desenvolvedor Criativo</h4>
+                    </div>
+                    <div class="mt-8">
+                        <h4 id="text-uimotion" data-aos="fade-up" data-aos-delay="400" class="xp-home dv color-title mt-4 lowercase">Designer Visual</h4>
+                    </div>
+                </div>
+
+                <div class="grid-5 container" style="align-self: center; width: calc(77.6666666667% - 8px);">
+                    <div>
+                        <h6 data-aos="fade-up" data-aos-delay="1000" style="font-size: 18px; letter-spacing: 2px" class="heading-3 color-title info-title2">E sou</h6>
+
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="800">
+                        <h4 style="text-transform: none;" data-aos="fade-up" data-aos-delay="800" class="descricao-home title2 ml-4">um dev front-end especializado em criar interfaces digitais que engajam e inspiram.</h4>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="1000" class="flex gap-4 mt-8 loc">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                            <g clip-path="url(#clip0_358_31)">
+                                <path d="M21 3.5C18.3941 3.53797 15.8954 4.5437 13.9899 6.32163C12.0843 8.09956 10.9081 10.5226 10.6899 13.1196C10.4716 15.7167 11.227 18.302 12.8091 20.373C14.3912 22.444 16.687 23.8527 19.25 24.325V36.75C19.25 37.2141 19.4344 37.6592 19.7626 37.9874C20.0907 38.3156 20.5359 38.5 21 38.5C21.4641 38.5 21.9092 38.3156 22.2374 37.9874C22.5656 37.6592 22.75 37.2141 22.75 36.75V24.325C25.313 23.8527 27.6088 22.444 29.1909 20.373C30.773 18.302 31.5284 15.7167 31.3101 13.1196C31.0919 10.5226 29.9156 8.09956 28.0101 6.32163C26.1045 4.5437 23.6059 3.53797 21 3.5ZM21 17.5C20.3078 17.5 19.6311 17.2947 19.0555 16.9101C18.4799 16.5256 18.0313 15.9789 17.7664 15.3394C17.5015 14.6998 17.4322 13.9961 17.5672 13.3172C17.7023 12.6382 18.0356 12.0146 18.5251 11.5251C19.0146 11.0356 19.6382 10.7023 20.3172 10.5673C20.9961 10.4322 21.6998 10.5015 22.3394 10.7664C22.9789 11.0313 23.5255 11.4799 23.9101 12.0555C24.2947 12.6311 24.5 13.3078 24.5 14C24.5 14.9283 24.1312 15.8185 23.4749 16.4749C22.8185 17.1312 21.9282 17.5 21 17.5Z" fill="url(#paint0_linear_358_31)" />
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_358_31" x1="21" y1="3.5" x2="21" y2="38.5" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#538BF0" />
+                                    <stop offset="1" stop-color="#1141BD" />
+                                </linearGradient>
+                                <clipPath id="clip0_358_31">
+                                    <rect width="42" height="42" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                        <h6 class="self-end">Paraíba, Brasil</h6>
+                    </div>
+                </div>
+
+
+            </section>
+            <div id="stripe"></div>
+
+            <section class="summary md-height container">
+                <div class="container">
+                    <h6 data-aos="fade-up" data-aos-delay="200" class="heading-3 color-title">TRABALHO COMO</h6>
+                    <h3 class=" heading-1 ml-4 mb-8 mt-2" data-aos="fade-up" data-aos-delay="400">Freelancer, Designer e Desenvolvedor</h3>
+                    <p data-aos="fade-up" data-aos-delay="600" class="ml-4">Ajudando pessoas a entrar no mundo digital combinando design, código e interação, sempre entregando o meu melhor.</p>
+                </div>
+
+                <div class="container">
+                    <div>
+                        <h6 data-aos="fade-up" data-aos-delay="400" class=" color-title mb-4">AQUI</h6>
+
+
+                        <p data-aos="fade-up" data-aos-delay="450" class="paragraph ml-4">você vai encontrar meus projetos, tecnologias que utilizo e um pouco sobre mim.</p>
+                    </div>
+                    <div class="summary-icons" data-aos="fade-up" data-aos-delay="600">
+                        <lord-icon src="https://cdn.lordicon.com/puwnxdog.json" trigger="loop" delay="2000" stroke="light" colors="primary:#6bbaff,secondary:#4271eb" style="width:58px;height:64px">
+                        </lord-icon>
+                        <lord-icon src="https://cdn.lordicon.com/nmguxqka.json" trigger="loop" delay="1500" stroke="light" colors="primary:#6bbaff,secondary:#4271eb" style="width:58px;height:64px">
+                        </lord-icon>
+                        <lord-icon src="https://cdn.lordicon.com/rokunbup.json" trigger="loop" delay="2000" stroke="light" state="in-reveal" colors="primary:#6bbaff,secondary:#4271eb" style="width:58px;height:64px">
+                        </lord-icon>
+                        <lord-icon class="icon-inactive" src="https://cdn.lordicon.com/wxwbdnuw.json" trigger="loop" delay="1500" stroke="light" colors="primary:#6bbaff,secondary:#4271eb" style="width:58px;height:64px">
+                        </lord-icon>
+                    </div>
+                </div>
+            </section>
+
+            <!-- // HOME -->
+            <div id="stripe"></div>
+
+            <!-- PROJETOS -->
+            <section id="trabalhos" class="full-height">
+                <div class="container">
+                    <div class="intro">
+                        <h6 data-aos="fade-up" data-aos-delay="100" class="heading-3 color-title">PROJETOS</h6>
+                        <h2 style="text-transform: none; font-weight: 300;" data-aos="fade-up" data-aos-delay="100" class="heading-1 ml-4 mb-8">Trabalhos Selecionados</h2>
+                        <!-- <p class="ml-4">Você não pode esgotar a sua criatividade. Quanto mais você usa, mais você tem.</p> -->
+                    </div>
+                    <section class="list flex flex-col mt-64 gap-16">
+                        <div data-aos="fade-up" data-aos-delay="200" class=" lista-item py-6 flex justify-between gap-16 items-center ">
+                            <div style="z-index: 3;" class="flex items-center z-3">
+                                <h5 class="color-gray mr-2">01.</h5>
+                                <a href="case-brcradvogados.html" target="_blank">
+                                    <h2 class="heading-2">BRCR Advogados</h2>
+                                </a>
+                                <img src="src/img/works/brcr-advogados/home.jpg" class="img-project" alt="Website para uma sociedade de Advogados feito de ponta a ponta (Design + Desenvolvimento)">
+                            </div>
+                            <span class="color-gray">Design e Desenvolvimento</span>
+                        </div>
+
+                        <div id="stripe"></div>
+
+                        <div class="lista-item flex items-center justify-between py-6" data-aos="fade-up" data-aos-delay="400">
+                            <div class="flex items-center z-3">
+                                <h5 class="color-gray mr-2">02.</h5>
+                                <a href="case-rauthenticite.html" target="_blank">
+                                    <h2 class="heading-2">R Authenticité</h2>
+                                </a>
+                                <img src="src/img/works/r-authenticite/home.jpg" class="img-project" alt="Website para uma empresa de registro de marcas e patentes feito de ponta a ponta (Design + Desenvolvimento)">
+                            </div>
+                            <span class="color-gray"> Design e Desenvolvimento</span>
+
+                        </div>
+
+                        <div id="stripe"></div>
+
+                        <div class="lista-item flex justify-between items-center py-6" data-aos="fade-up" data-aos-delay="600">
+                            <div class="flex items-center z-3">
+                                <h5 class="color-gray mr-2">03.</h5>
+                                <a href="" target="_blank">
+                                    <h2 class="heading-2">Bikcraft</h2>
+                                </a>
+                                <img src="src/img/works/bikcraft/home.jpg" class="img-project" alt="Website clone para uma loja de bicicletas feito de ponta a ponta (Design + Desenvolvimento)">
+                            </div>
+                            <span class="color-gray">Desenvolvimento</span>
+                        </div>
+                    </section>
+                </div>
+
+            </section>
+            <!-- //PROJETOS -->
+
+            <div id="stripe"></div>
+            <!-- TECNOLOGIAS -->
+            <section id="services" class="full-height">
+
+                <div class="container">
+                    <div class="intro">
+                        <h2 class="heading-2 mb-24 mt-2 " data-aos="fade-up" data-aos-delay="100">Tecnologias</h2>
+                    </div>
+                    <h6 style="font-weight: 200;" class="text-4xl ml-3 mb-10 color-title" data-aos="fade-up" data-aos-delay="400">Front-End</h6>
+                    <ul class="grid three-col-grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-16 sm:gap-x-4 gap-y-16 ml-4 ">
+
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="900">
+                            <div class="flex items-center gap-8 rounded-md  bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="z-10" src="src/img/icons/css.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="src/img/icons/css.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">CSS</span>
+                            </div>
+                        </li>
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="1000">
+                            <div class="flex items-center gap-8 rounded-md  bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="z-10" src="src/img/tech-icons/gsap-icon.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="src/img/tech-icons/gsap-icon.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">GSAP</span>
+                            </div>
+                        </li>
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="1100">
+                            <div class="flex items-center gap-8 rounded-md  bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="z-10" src="src/img/icons/html.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="src/img/icons/html.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">HTML</span>
+                            </div>
+                        </li>
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="1200">
+                            <div class="flex items-center gap-8 rounded-md bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="z-10" src="src/img/icons/javascript.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="src/img/icons/javascript.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">JavaScript</span>
+                            </div>
+                        </li>
+
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="900">
+                            <div class="flex items-center gap-8 rounded-md p-3 bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring" target="_blank" rel="noopener noreferrer" href="https://nextjs.org">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden dark:invert">
+                                    <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="z-10" src="/src/img/tech-icons/nextjs.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="/src/img/tech-icons/mysql.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">Next</span>
+                            </div>
+                        </li>
+
+
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="1000">
+                            <div class="flex items-center gap-8 rounded-md  bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="z-10" src="src/img/icons/react.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="src/img/icons/react.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">React</span>
+                            </div>
+                        </li>
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="1100">
+                            <div class="flex items-center gap-8 rounded-md  bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="z-10" src="src/img/icons/styled-components.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="src/img/icons/styled-components.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">Styled Components</span>
+                            </div>
+                        </li>
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="1200">
+                            <div class="flex items-center gap-8 rounded-md  bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="z-10" src="src/img/icons/sass.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="src/img/icons/sass.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">Sass</span>
+                            </div>
+                        </li>
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="900">
+                            <div class="flex items-center gap-8 rounded-md  bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="z-10" src="src/img/icons/tailwindcss.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="src/img/icons/tailwindcss.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">TailwindCSS</span>
+                            </div>
+                        </li>
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="1000">
+                            <div class="flex items-center gap-8 rounded-md  bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="z-10" src="src/img/tech-icons/typescript.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="src/img/tech-icons/typescript.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">TypeScript</span>
+                            </div>
+                        </li>
+
+
+
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="1100">
+                            <div class="flex items-center gap-8 rounded-md  bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="z-10" src="src/img/tech-icons/vuejs-icon.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="src/img/tech-icons/vuejs-icon.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">Vue</span>
+                            </div>
+                        </li>
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="1200">
+                            <div class="flex items-center gap-8 rounded-md  bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="z-10" src="src/img/icons/vite.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="src/img/icons/vite.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">Vite</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <h6 style="font-weight: 200;" class="text-4xl ml-3 mb-10 mt-32 color-title" data-aos="fade-up" data-aos-delay="600">Design</h6>
+                    <ul class="grid three-col-grid grid md:grid-cols-3 lg:grid-cols-4 gap-x-16 gap-y-16 ml-4">
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="900">
+                            <div class="flex items-center gap-8 rounded-md  bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="z-10" src="src/img/icons/photoshop.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="src/img/icons/photoshop.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">Adobe Photoshop</span>
+                            </div>
+                        </li>
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="1000">
+                            <div class="flex items-center gap-8 rounded-md  bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="z-10" src="src/img/icons/xd.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="src/img/icons/xd.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">Adobe Xd</span>
+                            </div>
+                        </li>
+
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="1100">
+                            <div class="flex items-center gap-8 rounded-md bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="z-10" src="src/img/icons/figma.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="src/img/icons/figma.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">Figma</span>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                    <h6 style="font-weight: 200; letter-spacing: 0;" class="text-4xl ml-3 mb-10 mt-32 color-title" data-aos="fade-up" data-aos-delay="800">Back-end e Banco de Dados</h6>
+                    <ul class="grid three-col-grid grid md:grid-cols-3 lg:grid-cols-4 gap-x-16 gap-y-16 ml-4">
+
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="900">
+                            <div class="flex items-center gap-8 rounded-md p-3 bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring" target="_blank" rel="noopener noreferrer" href="https://nextjs.org">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="z-10" src="/src/img/tech-icons/mongodb.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="/src/img/tech-icons/mongodb.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">MongoDB</span>
+                            </div>
+                        </li>
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="1000">
+                            <div class="flex items-center gap-8 rounded-md p-3 bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring" target="_blank" rel="noopener noreferrer" href="https://nextjs.org">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="z-10" src="/src/img/tech-icons/mysql.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="/src/img/tech-icons/mysql.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">MySQL</span>
+                            </div>
+                        </li>
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="1100">
+                            <div class="flex items-center gap-8 rounded-md p-3 bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring" target="_blank" rel="noopener noreferrer" href="https://nextjs.org">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="z-10" src="/src/img/tech-icons/nodejs.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="/src/img/tech-icons/nodejs.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">Node</span>
+                            </div>
+                        </li>
+                        <!-- <li class="card card-padding " data-aos="fade-up" data-aos-delay="1200">
+                            <div class="flex items-center gap-8 rounded-md p-3 bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring" target="_blank" rel="noopener noreferrer" href="https://nextjs.org">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden ">
+                                    <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="z-10" src="/src/img/tech-icons/postgresql.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="/src/img/icons/photoshop.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">PostgreSQL</span>
+                            </div>
+                        </li> -->
+
+                    </ul>
+                    <h6 style="font-weight: 200; letter-spacing: 1px;" class="text-4xl ml-3 mb-10 mt-32 color-title" data-aos="fade-up" data-aos-delay="1000">Controle de versões</h6>
+                    <ul class="grid three-col-grid grid md:grid-cols-3 lg:grid-cols-4 gap-x-16 gap-y-16 ml-4">
+
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="900">
+                            <div class="flex items-center gap-8 rounded-md  bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="z-10" src="src/img/icons/git.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="src/img/icons/git.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">Git</span>
+                            </div>
+                        </li>
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="1000">
+                            <div class="flex items-center gap-8 rounded-md  bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden dark:invert">
+                                    <img alt="" class="z-10" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" src="src/img/icons/github.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="src/img/icons/github.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">Github</span>
+                            </div>
+                        </li>
+                        <li class="card card-padding " data-aos="fade-up" data-aos-delay="1100">
+                            <div class="flex items-center gap-8 rounded-md p-3 bg-accent/50 dark:backdrop-blur-2xl hover:bg-accent/70 text-accent-foreground transition-colors focus:outline-none focus-visible:outline-2 focus-visible:outline focus-visible:outline-ring" target="_blank" rel="noopener noreferrer" href="https://nextjs.org">
+                                <div class="p-2 flex items-center justify-center rounded-lg relative overflow-hidden">
+                                    <img alt="" loading="lazy" width="32" height="32" decoding="async" data-nimg="1" class="z-10" src="/src/img/icons/gitlab.svg" style="color: transparent;">
+                                    <img alt="" loading="lazy" width="8" height="8" decoding="async" data-nimg="1" class="blur-lg absolute inset-0 w-[125%] h-[125%] opacity-80 z-0" src="/src/img/icons/gitlab.svg" style="color: transparent;">
+                                </div>
+                                <span class="heading-3">Gitlab</span>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+            <!-- //TECNOLOGIAS -->
+            <div id="stripe"></div>
+
+            <!-- SOBRE -->
+            <section id="sobre" data-aos="fade-up" data-aos-delay="100" class="full-height">
+                <div class="container">
+                    <div class="sobre-intro grid grid-cols-1 lg:grid-cols-2 gap-16">
+                        <div class="flex flex-col">
+                            <h5 style="display: block;" class="block heading-3 color-title">TL;DR</h5>
+                            <h2 class="heading-2">Sobre mim</h2>
+                        </div>
+                        <ul class="grid ml-4 gap-2" style="list-style: circle;">
+                            <li><strong>Localização</strong>: Campina Grande - Paraíba, Brasil</li>
+                            <li><strong>Idade</strong>: 19</li>
+                            <li><strong>Graduação</strong>: Análise e Desenvolvimento de Sistemas (2/5)</li>
+                            <li><strong>Cargo</strong>: Desenvolvedor Front-end e UI Designer</li>
+                            <li><strong>Stack Principal</strong>: React, JavaScript, HTML, CSS, Figma</li>
+                            <li><strong>Idiomas</strong>: Inglês <span class="color-gray heading-4">(Proficiência profissional)</span> Português <span class="color-gray heading-4">(Nativo)</span></li>
+                            <li><strong>Apaixonado</strong> por musculação e violão 🥰</li>
+                        </ul>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-delay="400" class="mt-32 items-center">
+                        <h2 class="heading-2 lowercase col-span-2 mb-4">Olá, prazer em conhecê-lo</h2>
+                        <div class="grid md:grid-cols-1 grid-cols-1 lg:grid-cols-2 gap-32 gap-y-64 mt-16">
+                            <div data-aos="fade-up" data-aos-delay="200" class="grid">
+                                <h6 class=" lowercase self-center col-span-2 mb-4 color-title">Como desenvolvedor</h6>
+
+                                <p style="line-height: 1.8;" class="place-self-start ml-3">embarquei em minha jornada na área de tecnologia em <strong>2022</strong> na minha primeira graduação em Ciências da Computação pela Universidade Estadual da Paraíba - <strong>UEPB</strong>, meu tempo na instituição me permitiu aprofundar-me nos aspectos <strong>teóricos da programação</strong>, algoritmos e estruturas de dados, o que estabeleceu uma base sólida para minha carreira.</p>
+
+                            </div>
+
+                            <div>
+                                <img style="border-radius:5px;" class="mb-4 rounded-lg max-w-3xl" src="src/img/about/uepb.png" alt="Alunos graduandos da turma 2022.2 de Ciências da Computação da Universidade Estadual da Paraíba. (2022)">
+                                <p class="text-center max-w-3xl col-start-2"><i>Alunos graduandos da turma 2022.2 de Ciências da Computação da Universidade Estadual da Paraíba - UEPB. (2022)</i></p>
+                            </div>
+
+                            <div data-aos="fade-up" data-aos-delay="200" class="grid">
+                                <p class="ml-3 self-center">Nos últimos anos, com minha transição de graduação, meu foco profissional mudou significativamente para o <strong>desenvolvimento Web</strong>. Gosto de acreditar que a cada desafio é uma oportunidade para expandir meus horizontes. Por isso, <strong>prospero em novos projetos</strong>, pois a cada solução é um novo capítulo de aprendizado e crescimento.
+                                    <br>
+                                    <br>
+                                    Meu espírito de codificação está centrado na <strong>clareza e acessibilidade</strong>. Inicialmente, eu construo para garantir a funcionalidade, mas dedico um esforço considerável para <strong>refinar meu código</strong>– comentando, organizando e garantindo que ele seja bem recebido por qualquer colaborador. <strong>Minha casa é sua casa no mundo do código</strong>.
+                                </p>
+                            </div>
+
+                            <div class="flex flex-col ">
+                                <img class="max-w-3xl" src=" src/img/about/mockup.png" alt="mockup do projeto R Authenticité">
+                                <p class="text-center self-center max-w-3xl col-start-2 mt-3"><i>Design e codificação do site <a style="text-decoration: underline;" href="case-rauthenticite.html">R Authenticité</a> (2024)</i></p>
+                            </div>
+
+
+                            <div data-aos="fade-up" data-aos-delay="200" class="grid">
+                                <h6 style="letter-spacing: 1px;" class="lowercase self-center col-span-2 color-title">Como companheiro de equipe</h6>
+                                <p class="place-self-start ml-3">tive o privilégio de trabalhar com analistas e desenvolvedores experientes, absorvendo insights valiosos sobre o que faz um produto realmente se destacar. <br><strong>Meu espírito colaborativo é uma parte essencial de quem eu sou</strong>. Com uma formação que abrange engenharia e design, faço a ponte entre as mentes técnicas e criativas. Fazer um <strong>esforço extra</strong> pela minha equipe é uma segunda natureza para mim.</p>
+                            </div>
+
+                            <div>
+                                <img style="border-radius: 5px;" class="mb-2 rounded-lg max-w-3xl" src="src/img/about/vicoa.png" alt="Equipe de Análise de Dados da Empresa Vicoa Brasil (2023)">
+                                <p class="text-center max-w-3xl col-start-2"><i>Time de Análise de Dados da Empresa <a style="text-decoration: underline; text-decoration-color: var(--color-brand);" class="color-brand underline-auto underline-offset-1" href="https://www.linkedin.com/company/vicoa-brasil/">Vicoa Brasil</a> (2023)</i></p>
+
+                            </div>
+
+
+                            <div data-aos="fade-up" data-aos-delay="400" class="grid">
+                                <h6 style="letter-spacing: 1px;" class="lowercase col-span-2 color-title">Como pessoa</h6>
+                                <p class="place-self-start col-span-2 ml-3">sou um eterno aprendiz;<strong> A curiosidade é minha companheira constante</strong>. Meu conjunto diversificado de habilidades e interesses não apenas <strong>enriquece minha vida</strong>, mas alimenta continuamente meu desenvolvimento profissional, transformando-me em um indivíduo completo.</p>
+                                <p class="place-self-start ml-3">À medida que continuo a crescer tanto pessoal quanto profissionalmente, aspiro a contribuir para o desenvolvimento de soluções de ponta que <strong>impactem positivamente</strong> a vida das pessoas ao redor do mundo. Sou impulsionado por uma <strong>determinação implacável</strong> para ultrapassar os limites do que é possível, aproveitando minhas habilidades para criar experiências digitais significativas e impactantes que ressoem com os usuários em um nível profundo.</p>
+                            </div>
+
+                            <div>
+                                <img style="border-radius: 10px;" class="mb-2 rounded-lg max-w-3xl" src="src/img/about/setup2.jpg" alt="Meu ambiente de trabalho (2024)">
+                                <p class="text-center max-w-3xl col-start-2"><i>Meu ambiente de trabalho (2024)</i></p>
+
+                            </div>
+
+
+
+                            <div data-aos="fade-up" data-aos-delay="200" class="grid gap-4">
+                                <h6 style="letter-spacing: 1px;" class="lowercase col-span-2 color-title">Nota de conclusão</h6>
+                                <p class="place-self-start col-span-2 ml-3">Obrigado por visitar meu portfólio e dedicar seu tempo para saber mais sobre minha jornada. Estou entusiasmado com as possibilidades que o futuro reserva e ansioso para embarcar em novos desafios que me permitam contribuir para o cenário tecnológico em constante evolução. Não hesite em entrar em contato comigo, vamos colaborar e criar algo notável juntos!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //SOBRE -->
+            <div id="stripe"></div>
+
+            <!-- FOOTER -->
+            <footer class="footer container mt-16">
+                <p class=" footer-bomdia">Não tenha um bom dia. <span style="cursor: default;" class="color-title"> Tenha um ótimo dia!</span></p>
+                <div class="footer-redes container">
+                    <a style="border: 1px solid gray;" href="#" class="heading-3 button-hover"><span class="">luanrnr1227@gmail.com</span></a>
+                    <a style="border: 1px solid gray;" href="#" class="heading-3 button-hover"><span>+55 (83) 98217-8199</span></a>
+                </div>
+            </footer>
+            <!-- //FOOTER -->
+        </div>
+    </main>
+    <!-- // Main wrapper end -->
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 1000
+        });
+        const test = function () {
+            setTimeout(function () { AOS.refresh(); }, 500);
+        };
+        test();
+    </script>
+    <script src="./src/js/menu-mobile.js"></script>
+    <script src="./src/js/gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
