@@ -20,12 +20,13 @@ btnArray.forEach((btn) => {
   };
 });
 
-// Função para voltar ao topo da página a cada reload
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
+    
   });
+
 };
 
 // FUNCIONALIDADE: Menu seguindo as sections

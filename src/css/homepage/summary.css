@@ -55,6 +55,18 @@
   .summary-icons {
     justify-content: center;
   }
+  .summary h2 {
+    text-transform: none;
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 200;
+    font-size: clamp(3rem, 3.5vw, 4rem);
+
+  }
+  .summary h6 {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
 }
 @media (max-width: 425px) {
   .icon-inactive {

@@ -20,9 +20,10 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
 
+
 </head>
 
-<body data-aos="fade-up" data-aos-delay="0">
+<body class = "body" data-aos="fade-up" data-aos-delay="0">
 
     <!-- Side nav -->
     <header class="top" data-aos="fade-right" data-aos-delay="5000">
@@ -71,7 +72,6 @@
         </svg>
     </div>
     <!-- Main wrapper -->
-
     <main class="delay-bg" id="content-wrapper">
         <!-- BACKGROUND HERO -->
         <div style=" opacity: 1;">
@@ -195,13 +195,13 @@
             <section class="summary md-height container">
                 <div class="container">
                     <h6 data-aos="fade-up" data-aos-delay="200" class="heading-3 color-title">TRABALHO COMO</h6>
-                    <h2 class=" ml-4 mb-8 mt-2" data-aos="fade-up" data-aos-delay="400">Freelancer, Designer e Desenvolvedor</h2>
+                    <h2 class="heading-3 ml-4 mb-8 mt-2" data-aos="fade-up" data-aos-delay="400">Freelancer, Designer e Desenvolvedor</h2>
                     <p data-aos="fade-up" data-aos-delay="600" class="ml-4">Ajudando pessoas a entrar no mundo digital combinando design, código e interação, sempre entregando o meu melhor.</p>
                 </div>
 
                 <div class="container">
                     <div>
-                        <h6 data-aos="fade-up" data-aos-delay="400" class=" color-title mb-4">AQUI</h6>
+                        <h6 data-aos="fade-up" data-aos-delay="400" class=" color-title mb-2">AQUI</h6>
 
 
                         <p data-aos="fade-up" data-aos-delay="450" class="paragraph ml-4">você vai encontrar meus projetos, tecnologias que utilizo e um pouco sobre mim.</p>
@@ -223,11 +223,11 @@
             <div id="stripe"></div>
 
             <!-- PROJETOS -->
-            <section id="trabalhos" class="projects full-height">
+            <section id="trabalhos" class="projects full-height container ">
                 <div class="container">
                     <div class="projects-title">
                         <h6 data-aos="fade-up" data-aos-delay="100" class="heading-3 color-title">PROJETOS</h6>
-                        <h2 data-aos="fade-up" data-aos-delay="100" class="ml-4 mb-8">Trabalhos Selecionados</h2>
+                        <h2 data-aos="fade-up" data-aos-delay="100" class="heading-2 ml-4 mb-8">Trabalhos Selecionados</h2>
                         <!-- <p class="ml-4">Você não pode esgotar a sua criatividade. Quanto mais você usa, mais você tem.</p> -->
                     </div>
                     <section class="list flex flex-col mt-64 gap-16">
@@ -276,7 +276,7 @@
 
             <div id="stripe"></div>
             <!-- TECNOLOGIAS -->
-            <section id="services" class="techs full-height">
+            <section id="services" class="techs full-height container">
 
                 <div class="container ">
                     <div class="techs-title">
@@ -513,8 +513,8 @@
             <div id="stripe"></div>
 
             <!-- SOBRE -->
-            <section id="sobre" data-aos="fade-up" data-aos-delay="100" class="full-height">
-                <div class="about container">
+            <section id="sobre" data-aos="fade-up" data-aos-delay="100" class="full-height about container">
+                <div class=" container">
                     <div class="about-title grid grid-cols-1 lg:grid-cols-2 gap-16">
                         <div class="flex flex-col">
                             <h5 class=" color-title">TL;DR</h5>
@@ -532,7 +532,7 @@
                     </div>
 
                     <div data-aos="fade-up" data-aos-delay="400" class="mt-32 items-center container container-sm">
-                        <h2 class=" mb-4 mt-2 col-span-2" data-aos="fade-up" data-aos-delay="400">Olá, prazer em conhecê-lo</h2>
+                        <h3 class=" mb-4 mt-2 col-span-2" data-aos="fade-up" data-aos-delay="400">Olá, prazer em te conhecer</h3>
 
                         <div class="grid md:grid-cols-1 grid-cols-1 lg:grid-cols-2 gap-32 gap-y-64 mt-16">
                             <div data-aos="fade-up" data-aos-delay="200" class="grid">
@@ -613,20 +613,21 @@
 
 
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: true,
-            duration: 700
-        });
 
-    </script>
-    <script src="./src/js/menu-mobile.js"></script>
     <script src="./src/js/gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./src/js/menu-mobile.js"></script>
+    <script>
+
+        AOS.init({
+            once: true,
+            duration: 700,
+        });
+
+    </script>
 </body>
 
 </html>

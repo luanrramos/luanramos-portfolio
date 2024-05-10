@@ -15,7 +15,6 @@
   line-height: 120%;
   font-weight: 200;
   text-transform: uppercase;
-
 }
 .img-project {
   max-width: 650px;
@@ -45,9 +44,45 @@
 .list h5 {
   font-family: var(--font-base2);
 }
-
+@media (max-width: 1200px) {
+  .projects-title h2 {
+    text-transform: none;
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 300;
+    font-size: clamp(3.5rem, 3.5vw, 4rem);
+  }
+  .projects h3 {
+    text-transform: none;
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: clamp(3rem, 3vw, 3.8rem);
+  }
+}
 @media (max-width: 800px) {
   .lista-item span {
     display: none;
+  }
+  .projects-title h2 {
+    text-transform: none;
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 300;
+    font-size: clamp(3rem, 3.5vw, 3.5rem);
+  }
+  .projects h3 {
+    text-transform: none;
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: clamp(2.5rem, 3vw, 3.8rem);
+  }
+}
+@media (max-width: 430px) {
+  .projects-title h2 {
+    font-size: clamp(2.5rem, 3.5vw, 3.5rem);
   }
 }

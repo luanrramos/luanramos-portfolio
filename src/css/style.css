@@ -19,6 +19,9 @@
 @import url("homepage/summary.css");
 @import url("homepage/tecnologias.css");
 
+/* Cases */
+@import url("cases/navbar.css");
+
 *,
 *::after,
 *::before {
@@ -91,27 +94,10 @@ p {
     padding: 0 2.4rem;
   }
 }
-@media (max-width: 350px) {
-  .show * {
-    font-size: 1rem;
-  }
-
-  .summary .container * {
-    font-size: 1rem;
-  }
-  h5,
-  h6,
-  p,
-  .heading-3,
-  .heading-1,
-  .paragraph {
-    font-size: 1.9rem;
-  }
-  .summary .paragraph {
-    font-size: 1.9rem;
-  }
-  .grid-7 {
-    font-size: 1rem;
+@media (max-width: 600px) {
+  .container {
+    padding: 0 4.4rem;
+    margin-left: 0px;
   }
 }
 .container .btn {

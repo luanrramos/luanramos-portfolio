@@ -7,10 +7,30 @@
   line-height: 120%;
   font-weight: 300;
 }
+.about h3 {
+  text-transform: none;
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 300;
+  color: #c2cce0;
+}
 
 .about h5 {
   font-size: 18px;
   letter-spacing: 2px;
 }
+@media (max-width: 800px) {
 
+  .about h2 {
+    text-transform: none;
+    font-size: 48px;
+    line-height: 120%;
+    font-weight: 200;
+    font-size: clamp(3rem, 3.5vw, 4rem);
 
+  }
+  .about h3{
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+}
