@@ -1,6 +1,7 @@
 /* Global */
 @import url("global/bg-hero.css");
 @import url("global/footer.css");
+@import url("global/clipboard.css");
 
 /* Componentes */
 @import url("components/tailwind.css");

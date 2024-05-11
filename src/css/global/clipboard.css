@@ -1,0 +1,128 @@
+.K2_CBox {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding-right: 16px;
+  border: 0.5px solid gray;
+  border-radius: 100em;
+}
+
+.K2_CBox .C_box_main {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 12px;
+  outline: 0;
+  border: 0;
+  border-radius: 50%;
+  background: linear-gradient(224.78deg, #4271eb 8.12%, #6bbaff 92.21%);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+.K2_CBox .C_box_main:hover {
+  opacity: 0.8;
+}
+.K2_CBox .C_box_main .CBox_icn {
+  flex-shrink: 0;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23fefefe' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' viewBox='0 0 24 24'><rect x='5.54615' y='5.54615' width='16.45385' height='16.45385' rx='4'/><path d='M171.33311,181.3216v-8.45385a4,4,0,0,1,4-4H183.787' transform='translate(-169.33311 -166.86775)'/></svg>");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.K2_CBox .C_box_main.copied {
+  background-color: var(--color-brand2);
+}
+.K2_CBox .C_box_main.copied .CBox_icn {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='%23fefefe' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' viewBox='0 0 24 24'><path d='M22 11.07V12a10 10 0 1 1-5.93-9.14'/><polyline points='23 3 12 14 9 11'/></svg>");
+}
+
+.dark-Mode .K2_CBox {
+  background: #2d2d30;
+}
+
+.tNtf span {
+  position: fixed;
+  left: 24px;
+  bottom: -70px;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  z-index: 99981;
+  background: var(--color-bg);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-family: inherit;
+  border-radius: 3px;
+  padding: 13px 24px;
+  box-shadow: 0 5px 35px rgba(149, 157, 165, 0.3);
+  opacity: 0;
+  transition: all 0.1s ease;
+  animation: slideinwards 2s ease forwards;
+  -webkit-animation: slideinwards 2s ease forwards;
+}
+@media screen and (max-width: 500px) {
+  .tNtf span {
+    margin-bottom: 20px;
+    left: 20px;
+    right: 20px;
+    font-size: 13px;
+  }
+}
+@keyframes slideinwards {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    bottom: 0;
+  }
+  50% {
+    opacity: 1;
+    bottom: 0;
+  }
+  80% {
+    opacity: 1;
+    bottom: 0;
+  }
+  100% {
+    opacity: 0;
+    bottom: -70px;
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes slideinwards {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    bottom: 0;
+  }
+  50% {
+    opacity: 1;
+    bottom: 0;
+  }
+  80% {
+    opacity: 1;
+    bottom: 0;
+  }
+  100% {
+    opacity: 0;
+    bottom: -70px;
+    visibility: hidden;
+  }
+}
+.darkMode .tNtf span {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .CB_Heading {
+    display: none;
+  }
+}

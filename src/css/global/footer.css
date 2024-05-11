@@ -22,7 +22,7 @@
   text-decoration: none;
   position: relative;
   overflow: hidden;
-  border: 1px solid linear-gradient(224.78deg, #4271eb 8.12%, #6bbaff 92.21%);
+  /* border: 1px solid linear-gradient(224.78deg, #4271eb 8.12%, #6bbaff 92.21%); */
   border-radius: 100em;
 }
 .button-hover:hover {

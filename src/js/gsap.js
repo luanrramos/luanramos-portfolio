@@ -126,7 +126,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const tl = gsap.timeline();
 
-  tl.fromTo(".body", 1.5, { scrollToTop }, { scrollToTop }, "-=1.5");
+  // tl.fromTo(".body", 1.5, { scrollToTop }, { scrollToTop }, "-=1.5");
 
   tl.fromTo(
     ".loader",
@@ -134,7 +134,6 @@ document.addEventListener("DOMContentLoaded", () => {
     { width: "100%" },
     { width: "0%", delay: 4, ease: Expo.easeInOut }
   )
-
     .fromTo(".body", 1, { overflow: "hidden" }, { overflow: "auto" }, "-=1")
 
     .fromTo(
