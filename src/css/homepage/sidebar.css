@@ -11,7 +11,7 @@
   display: grid;
   text-align: center;
   padding: 2.4rem;
-  z-index: 4;
+  z-index: 1;
   transition: all 0.4s ease;
   background-color: rgba(1, 2, 9, 0.035);
 }
@@ -43,6 +43,16 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+}
+.profile {
+  border-radius: 50%;
+  border: 0px solid linear-gradient(224.78deg, #4271eb 8.12%, #6bbaff 92.21%);
+  transition: 0.3s ease;
+
+  position: relative;
+}
+.profile:hover {
+  box-shadow: 0px 0px 16px #4271eb;
 }
 
 @media screen and (max-width: 992px) {

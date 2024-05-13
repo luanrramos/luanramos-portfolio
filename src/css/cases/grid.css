@@ -1,0 +1,30 @@
+.case-grid1 {
+  margin-top: 180px;
+  grid-template-columns: 1fr 1.5fr;
+  gap: clamp(2.5rem, 3.5vw, 3rem);
+  place-content: space-between;
+}
+
+.case-grid2 {
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.3rem, 3.5vw, 3rem);
+  margin-bottom: 120px;
+}
+
+@media (max-width: 800px) {
+  .case-grid1,
+  .case-grid2 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .case-grid1 {
+    margin-top: 60px;
+  }
+  .case-grid1 .grid {
+    place-content: initial;
+    gap: 4rem;
+  }
+  .case-grid2 {
+    margin-bottom: 40px;
+  }
+}

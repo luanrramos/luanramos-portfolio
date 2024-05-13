@@ -60,21 +60,24 @@
     --color-body: hsl(131, 35%, 84%);
     --color-heading: hsl(131, 35%, 95%); */
 
-  --color-brand: hsl(204, 71%, 62%);
-  --color-brand2: hsl(192, 84%, 72%);
+  --color-brand: #4271eb;
+  --color-brand2: #0b2357;
 
   --sidebar-hsl: 204, 71%, 3%;
 
   --color-body: hsl(252, 27%, 82%);
   --color-heading: #edeff0;
 
-  --color-bg: #030917; /* Nasser */
+  --color-bg: #030917; /* N */
+  --color-bg2: #edeff0; /* N */
   --color-bg: #020712; /* Luan */
-
 }
 
-.color-gray {
-  color: hsl(0, 0%, 70%);
+.gray1 {
+  color: #a5a6a8;
+}
+.gray2 {
+  color: #7c7d80;
 }
 
 .text-brand {
@@ -90,4 +93,3 @@
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
-

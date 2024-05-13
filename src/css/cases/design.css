@@ -1,0 +1,32 @@
+.case-design {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.design-img {
+  margin-top: 5rem;
+  display: grid;
+  gap: 20rem;
+}
+.design-mobile {
+  display: none;
+}
+@media (max-width: 600px) {
+  .case-design {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .design-img {
+    justify-items: center;
+    align-items: center;
+    gap: 10rem;
+  }
+  .design-mobile {
+    display: block;
+    margin: 0 auto;
+  }
+  .design-desk {
+    display: none;
+  }
+}

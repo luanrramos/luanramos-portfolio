@@ -1,0 +1,19 @@
+.container-case {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.container-case::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 960px) {
+  .container-case {
+    flex-direction: column;
+  }
+}

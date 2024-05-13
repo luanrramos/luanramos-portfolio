@@ -1,0 +1,29 @@
+.next {
+  margin: 120px auto;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+}
+.next .btn {
+  background: linear-gradient(224.78deg, #1a42a7 8.12%, #6b7fff 92.21%);
+}
+
+.next h3 {
+  font-family: var(--font-base2);
+}
+.next p {
+  font-family: var(--font-base2);
+  font-size: 2rem;
+}
+.next .btn {
+  place-self: center;
+  max-width: 200px;
+}
+@media (max-width: 600px) {
+  .next {
+    margin: 60px 0;
+  }
+}

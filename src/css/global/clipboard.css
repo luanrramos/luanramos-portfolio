@@ -42,7 +42,9 @@
 .dark-Mode .K2_CBox {
   background: #2d2d30;
 }
-
+.tNtf{
+  z-index: 1000;
+}
 .tNtf span {
   position: fixed;
   left: 24px;
