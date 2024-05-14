@@ -2,7 +2,7 @@
   margin-top: 180px;
   grid-template-columns: 1fr 1.5fr;
   gap: clamp(2.5rem, 3.5vw, 3rem);
-  gap: 50px;
+  gap: 40px;
   place-content: space-between;
 }
 

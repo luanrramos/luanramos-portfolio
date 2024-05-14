@@ -45,13 +45,17 @@ h6 {
   line-height: 120%;
   font-weight: 300;
 }
-.font-base-2{
+.font-base-2 {
   font-family: var(--font-base2);
 }
 
 p,
 #sidebar {
   font-family: "Bai Jamjuree";
+}
+
+.font-base-3 {
+  font-family: "Playfair Display";
 }
 @media (max-width: 620px) {
   .titulo-home {

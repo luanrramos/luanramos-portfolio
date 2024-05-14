@@ -24,8 +24,9 @@
   padding-top: 32px;
   box-sizing: border-box;
   margin: 40px 0;
+  margin-bottom: 80px;
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 1;
 }
 .informations-casestudies > div {
   display: flex;
@@ -179,6 +180,9 @@
   }
   .informations-casestudies {
     margin-top: 0;
+  }
+  .url div {
+    flex-direction: row;
   }
 }
 

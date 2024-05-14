@@ -7,6 +7,7 @@
 .banner.brcr img {
   transform: translate(0, -5%);
 }
+
 .banner.rauth img {
   transform: translate(0, -20%) scale(1);
 }
