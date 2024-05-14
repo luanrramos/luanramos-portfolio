@@ -1,5 +1,3 @@
-;
-
 /*==================== GSAP ====================*/
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/
@@ -117,4 +115,8 @@ document.addEventListener("DOMContentLoaded", () => {
       scrub: 1,
     },
   });
+
+  function r() {
+    (c = $("a.scroll-top")), o(), a(), s();
+  }
 });

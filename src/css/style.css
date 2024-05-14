@@ -33,6 +33,8 @@
 @import url("cases/mobile.css");
 @import url("cases/next.css");
 @import url("cases/footer.css");
+@import url("cases/vertical-nav.css");
+@import url("cases/dropdown.css");
 
 *,
 *::after,
@@ -112,7 +114,7 @@ p {
   padding: 1.4rem 2.4rem;
   background-color: var(--color-brand);
   color: var(--color-bg2);
-  background: linear-gradient(224.78deg, #4271eb 8.12%, #6bbaff 92.21%);
+  background: linear-gradient(224.78deg, #1850e1 8.12%, #4aa6f7 92.21%);
   text-transform: uppercase;
   font-weight: 500;
   border-radius: var(--border-radius);
@@ -123,8 +125,8 @@ p {
 }
 
 .btn:hover {
-  background-color: var(--color-brand2);
-  color: var(--color-bg2);
+  background-color: var(--color-bg);
+  color: var(--color-body);
 }
 
 /* Main */

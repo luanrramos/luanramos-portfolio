@@ -9,6 +9,7 @@
   line-height: 120%;
   font-weight: 300;
 }
+
 .projects h3 {
   text-transform: none;
   font-size: 48px;
@@ -62,15 +63,17 @@
   }
 }
 @media (max-width: 800px) {
+  #trabalhos {
+    min-height: 0vh;
+  }
   .lista-item span {
     display: none;
   }
   .projects-title h2 {
     text-transform: none;
-    font-size: 48px;
     line-height: 120%;
     font-weight: 300;
-    font-size: clamp(3rem, 3.5vw, 3.5rem);
+    font-size: 30px;
   }
   .projects h3 {
     text-transform: none;
@@ -80,9 +83,9 @@
     text-transform: uppercase;
     font-size: clamp(2.5rem, 3vw, 3.8rem);
   }
-}
-@media (max-width: 430px) {
-  .projects-title h2 {
-    font-size: clamp(2.5rem, 3.5vw, 3.5rem);
+  .projects-title h6 {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 300;
   }
 }

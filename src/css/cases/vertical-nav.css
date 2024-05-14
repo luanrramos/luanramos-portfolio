@@ -1,0 +1,160 @@
+a.scroll-top.on {
+  right: 14px;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition: opacity 0.4s linear, background 0.2s cubic-bezier(0.3, 0, 0.5, 1),
+    -webkit-transform 0.4s linear;
+  transition: transform 0.4s linear, opacity 0.4s linear,
+    background 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition: transform 0.4s linear, opacity 0.4s linear,
+    background 0.2s cubic-bezier(0.3, 0, 0.5, 1), -webkit-transform 0.4s linear;
+}
+
+a.scroll-top:active {
+  background: #0f141e;
+}
+
+@media (min-width: 768px) and (min-height: 620px) {
+  a.scroll-top {
+    bottom: 30px;
+  }
+
+  a.scroll-top.on {
+    right: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  a.scroll-top {
+    bottom: 40px;
+  }
+
+  a.scroll-top.on {
+    right: 40px;
+  }
+
+  a.scroll-top:hover {
+    background: #0f141e;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  a.scroll-top.on {
+    right: calc(env(safe-area-inset-right) + 14px);
+  }
+}
+
+@media (min-width: 768px) and (min-height: 620px), (min-width: 1280px) {
+  a.scroll-top {
+    background: rgba(15, 20, 30, 0.3);
+    display: block;
+    position: fixed;
+    width: 46px;
+    height: 46px;
+    right: -46px;
+    bottom: 14px;
+    z-index: 20;
+    opacity: 0;
+    padding: 13px;
+    border: 0 none;
+    border-radius: 23px;
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+    transition: opacity 0.4s linear, right 0s linear 0.4s,
+      -webkit-transform 0.4s linear;
+    transition: transform 0.4s linear, opacity 0.4s linear, right 0s linear 0.4s;
+    transition: transform 0.4s linear, opacity 0.4s linear, right 0s linear 0.4s,
+      -webkit-transform 0.4s linear;
+  }
+
+  a.scroll-top.on {
+    right: 14px;
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition: opacity 0.4s linear,
+      background 0.2s cubic-bezier(0.3, 0, 0.5, 1),
+      -webkit-transform 0.4s linear;
+    transition: transform 0.4s linear, opacity 0.4s linear,
+      background 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    transition: transform 0.4s linear, opacity 0.4s linear,
+      background 0.2s cubic-bezier(0.3, 0, 0.5, 1),
+      -webkit-transform 0.4s linear;
+  }
+
+  a.scroll-top svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  a.scroll-top:active {
+    background: #0f141e;
+  }
+
+  @media (min-width: 768px) and (min-height: 620px) {
+    a.scroll-top {
+      bottom: 30px;
+    }
+
+    a.scroll-top.on {
+      right: 30px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    a.scroll-top {
+      bottom: 40px;
+    }
+
+    a.scroll-top.on {
+      right: 40px;
+    }
+
+    a.scroll-top:hover {
+      background: #0f141e;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  header#header .logo {
+    margin-left: calc(env(safe-area-inset-left) + 14px);
+  }
+
+  header#header .menu {
+    margin-right: calc(env(safe-area-inset-left) + 14px);
+  }
+
+  .wrapper,
+  section.case-study-next-project {
+    padding-left: calc(env(safe-area-inset-left) + 14px);
+    padding-right: calc(env(safe-area-inset-right) + 14px);
+  }
+
+  div.loader .text {
+    bottom: calc(env(safe-area-inset-bottom) + 14px);
+  }
+
+  div.loader .logo,
+  div.loader .text {
+    left: calc(env(safe-area-inset-left) + 14px);
+  }
+
+  a.scroll-top.on {
+    right: calc(env(safe-area-inset-right) + 14px);
+  }
+
+  nav#nav .logo {
+    left: calc(env(safe-area-inset-left) + 14px);
+  }
+
+  nav#nav .close {
+    right: calc(env(safe-area-inset-right) + 14px);
+  }
+
+  .map .gm-style .controls.zoom-control {
+    margin-left: 10px;
+  }
+}

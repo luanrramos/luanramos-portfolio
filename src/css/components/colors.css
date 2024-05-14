@@ -60,12 +60,12 @@
     --color-body: hsl(131, 35%, 84%);
     --color-heading: hsl(131, 35%, 95%); */
 
-  --color-brand: #4271eb;
-  --color-brand2: #0b2357;
+  --color-brand: #1850e1;
+  --color-brand2: #4aa6f7;
 
   --sidebar-hsl: 204, 71%, 3%;
 
-  --color-body: hsl(252, 27%, 82%);
+  --color-body: hsl(240, 26%, 82%);
   --color-heading: #edeff0;
 
   --color-bg: #030917; /* N */

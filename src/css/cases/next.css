@@ -7,9 +7,7 @@
   gap: 3rem;
   text-align: center;
 }
-.next .btn {
-  background: linear-gradient(224.78deg, #1a42a7 8.12%, #6b7fff 92.21%);
-}
+
 
 .next h3 {
   font-family: var(--font-base2);

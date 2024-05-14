@@ -4,12 +4,18 @@
   overflow: hidden;
   position: relative;
 }
-.banner img {
+.banner.brcr img {
   transform: translate(0, -5%);
+}
+.banner.rauth img {
+  transform: translate(0, -20%) scale(1);
 }
 @media screen and (max-width: 960px) {
   .banner img {
     transform: translate(0, 20%) scale(1.5);
+  }
+  .banner.rauth img {
+    transform: translate(0, -2%) scale(1.5);
   }
 }
 .banner::after {
