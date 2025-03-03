@@ -27,8 +27,6 @@
   padding: 32px;
   max-width: 450px;
 }
-.case-overview .grid li p {
-}
 
 @media (max-width: 1200px) {
   .case-overview .grid {

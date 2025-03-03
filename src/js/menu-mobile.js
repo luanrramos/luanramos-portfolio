@@ -24,7 +24,7 @@ const scrollToTop = () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
-    
+
   });
 
 };
@@ -67,11 +67,13 @@ window.onload = function () {
 };
 
 function myFunction(x) {
-  if (x.matches) {
-    // If media query matches
-    containerSm.classList.remove("container");
-  } else {
-    containerSm.classList.add("container");
+  if (containerSm) {
+    if (x.matches) {
+      // If media query matches
+      containerSm.classList.remove("container");
+    } else {
+      containerSm.classList.add("container");
+    }
   }
 }
 

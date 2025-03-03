@@ -19,6 +19,8 @@ h6 {
 .heading-3 {
   font-size: 1.8rem;
 }
+
+
 h6 {
   color: #edeff0;
   font-size: 18px;
@@ -35,7 +37,6 @@ h6 {
 
 .titulo-home {
   font-size: 108px;
-
   line-height: 120%;
   font-weight: 100;
   color: #edeff0;
@@ -95,4 +96,13 @@ p,
   .heading-3 {
     font-size: 1.4rem;
   }
+  .heading-4{
+    font-size: 1rem;
+  }
 }
+
+.heading-4{
+    font-size: 2.57rem;
+    text-transform: capitalize;
+    line-height: 1.25;
+   }

@@ -40,7 +40,20 @@ section.full-height-home {
   margin-top: 4rem;
   margin: 6rem 9%;
 }
+.block{
+    display: block;
+}
 
+.border{
+    border: 1px solid red;
+}
+
+.space-between{
+    place-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
 #home p {
   max-width: 60rem;
   /* margin-top: 1.8rem; */
